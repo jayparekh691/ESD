@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Read</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <style>
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .page_heading { border-bottom:solid 1px #dedede; font-size:20px; font-weight:normal; margin:0 0 5px 0;  padding:10px 0 10px 0; color:#54bf83; }
+    .history { font-size:11px; color:#ccc; display:block; text-align:right;}
+
+    .well{
+      background-color: #b2dfdb;
+    }
+
+
+    .row.content {height: 650px}
+
+
+
+
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+
+    }
+
+
+
+
+  </style>
+
+</head>
+<body>
+
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left">
+
+      <br>
+
+      <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="72" src="assets/svg/iiitb_logo.jpg" width="100" >
+        <h2>Search Org Name</h2>
+      </div>
+
+
+      <form class="needs-validation-students" id="searchorg-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name">Org Name</label>
+            <input class="form-control" id="name" placeholder="" required type="text" value="">
+            <div class="invalid-feedback">
+              Valid name is required.
+            </div>
+          </div>
+
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Fetch</button>
+        </div>
+      </form>
+      <!--            <a class="btn btn-lg btn-success" role="button" href="fetch.html" style="margin-left:480px;">Filter By Courses</a>-->
+      <br>
+      <br><br>
+      <br>
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Org Name</th>
+          <th scope="col">Address</th>
+
+        </tr>
+        </thead>
+        <tbody id="Organization">
+
+
+        </tbody>
+      </table>
+
+
+
+
+
+
+    </div>
+
+    <div class="col-sm-2 sidenav">
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/searchorg.js"></script>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students - Courses</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container">
+  <div class="py-5 text-center">
+    <img alt="" class="d-block mx-auto mb-4" height="72" src="assets/svg/iiitb_logo.jpg" width="100" height=auto >
+    <h2>Add Organization</h2>
+  </div>
+
+  <div class="col-md-8 order-md-1">
+    <h4 class="mb-3">Organization Details</h4>
+    <form class="needs-validation-hr" id="addorg-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name">Org Name</label>
+          <input class="form-control" id="name" placeholder="" required type="text" value="">
+          <div class="invalid-feedback">
+            Valid Org name is required.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="address">Address</label>
+          <input class="form-control" id="address" placeholder="" required type="text" value="">
+          <div class="invalid-feedback">
+            Valid address is required.
+          </div>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Add Organization</button>
+      <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+        Duplicate deails!!
+      </div>
+      <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+        Details saved successfully!!
+      </div>
+    </form>
+  </div>
+  <br/>
+  <hr class="mb-4">
+
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/addorg-validation.js"></script>
+</html>
